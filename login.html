@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登录 - 表格文件管理系统</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="login-page">
+  <header class="tcl-header">
+    <div class="tcl-logo">
+      <div class="tcl-logo-mark">TCL</div>
+      <div class="tcl-logo-text">
+        表格文件管理系统
+        <span>授权访问与管理</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="login-main">
+    <section class="login-hero" aria-label="系统介绍">
+      <div class="hero-kicker">Spreadsheet Access Manager</div>
+      <h1>刚性计划变动率文件收集网页</h1>
+      <p class="hero-desc">减少手机内存的空间占用率，作者：臻</p>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <strong>多工作表</strong>
+          <span>在线预览与切换</span>
+        </div>
+        <div class="stat-card">
+          <strong>权限控制</strong>
+          <span>管理员统一维护</span>
+        </div>
+        <div class="stat-card">
+          <strong>大文件</strong>
+          <span>磁盘存储更稳定</span>
+        </div>
+      </div>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div>
+            <strong>文件列表排序与置顶</strong>
+            <small>快速定位常用表格文件</small>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div>
+            <strong>在线预览无需下载</strong>
+            <small>支持 Excel / CSV 表格内容查看</small>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div>
+            <strong>会话保护</strong>
+            <small>登录后访问业务数据</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="login-card" aria-label="登录表单">
+      <div class="login-card-header">
+        <div class="login-card-icon">T</div>
+        <div>
+          <h2>欢迎回来</h2>
+          <p>请登录以继续访问表格文件管理系统</p>
+        </div>
+      </div>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">账号</label>
+          <input type="text" id="username" name="username" autocomplete="username" required placeholder="请输入账号" />
+        </div>
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" required placeholder="请输入密码" />
+        </div>
+        <button type="submit" class="btn btn-primary">登 录</button>
+      </form>
+      <p id="loginError" class="error-msg"></p>
+      <div class="login-tip">默认管理员账号请联系系统管理员获取或重置。</div>
+    </section>
+  </main>
+
+  <script src="/js/login.js"></script>
+</body>
+</html>
